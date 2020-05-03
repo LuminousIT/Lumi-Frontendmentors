@@ -44,6 +44,7 @@ body {
 .box {
     height: 200px;
     border-radius: 5px;
+    overflow: hidden;
     /* margin: 10px; */
     /* border: 1px solid black; */
 }
@@ -79,39 +80,70 @@ body {
 }
 
 .first {
-    border-top: 2px solid hsl(180, 62%, 55%);
+    border-top: 4px solid hsl(180, 62%, 55%);
 }
 .first img {
     position: relative;
-    top: 60px;
-    left: 250px;
+    top: 3.5em;
+    left: 15em;
 }
 
 .second {
-    border-top: 2px solid hsl(0, 78%, 62%);
+    border-top: 4px solid hsl(0, 78%, 62%);
 }
 
 .second img, .third img {
     position: relative;
-    top: 40px;
-    left: 240px;
+    top: 2.5em;
+    left: 15em;
 }
 
 .third {
-    border-top: 2px solid hsl(34, 97%, 64%);
+    border-top: 4px solid hsl(34, 97%, 64%);
 }
 
 .fourth {
-    border-top: 2px solid hsl(212, 86%, 64%);
+    border-top: 4px solid hsl(212, 86%, 64%);
 }
 
 .fourth img {
     position: relative;
-    top: 40px;
-    left: 240px;
+    top: 2.6em;
+    left: 15em;
 }
 
 .mid-col {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 10px auto;
+        width: 90%;
+    }
+     .top, .powered {
+        font-size: 1.3em;
+    }
+
+    .header p {
+        font-size: .7em;
+    }
+   
+    .main-row {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between;
+        align-items: center; */
+    }
+
+    .first, .mid-col, .fourth {
+        width: 80%;
+        margin: 10px;
+    }
+    
+    .second, .third {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
