@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 40px auto;
+    width: 80%;
+}
+
+.header {
+    text-align: center;
+}
+
+.header .top {
+    font-weight: 300;
+    color: #62626A;
+}
+.header .powered {
+    font-weight: bold;
+    color: #515264;
+}
+
+.header p {
+    line-height: 1.2em;
+    color: hsl(0, 3%, 77%);
+    font-size: .7em;
+    margin: 15px 0px;
+} 
+
+.main-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    height: 200px;
+    border-radius: 5px;
+    /* margin: 10px; */
+    /* border: 1px solid black; */
+}
+
+.first, .mid-col, .fourth {
+    width: 50%;
+    margin: 10px;
+}
+
+.second, .third {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.first, .second, .third, .fourth {
+    padding: 20px;
+    box-shadow: -3px 5px 5px hsl(0, 3%, 77%);
+}
+
+/* .main-row img {
+    position: relative;
+    top: 60px;
+    left: 250px;
+} */
+
+.box-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.box-sub-title {
+    color: hsl(0, 1%, 66%);
+    font-size: .8em;
+}
+
+.first {
+    border-top: 2px solid hsl(180, 62%, 55%);
+}
+.first img {
+    position: relative;
+    top: 60px;
+    left: 250px;
+}
+
+.second {
+    border-top: 2px solid hsl(0, 78%, 62%);
+}
+
+.second img, .third img {
+    position: relative;
+    top: 40px;
+    left: 240px;
+}
+
+.third {
+    border-top: 2px solid hsl(34, 97%, 64%);
+}
+
+.fourth {
+    border-top: 2px solid hsl(212, 86%, 64%);
+}
+
+.fourth img {
+    position: relative;
+    top: 40px;
+    left: 240px;
+}
+
+.mid-col {
+    display: flex;
+    flex-direction: column;
+}

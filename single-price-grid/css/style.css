@@ -1,0 +1,88 @@
+@font-face {
+    font-family: raleway;
+    src: url("../fonts/Raleway-Medium.ttf");
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: raleway;
+    line-height: 1.4em;
+    background-color: #E6EFF6;
+}
+
+.container {
+    margin: 2em auto;
+    height: 100%;
+    max-width: 70%;
+    /* padding: 20px; */
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hero {
+    padding: 1.4em 2em;
+    background-color: white;
+    width: 100%;
+}
+
+.hero h2 {
+    color: #4DA7A4;
+}
+.hero h4 {
+    color: #CADA7B;
+}
+
+.hero p {
+    color: #B6BABD;
+}
+
+#second-row {
+    display:flex;
+    max-width: 100%;
+    justify-content: space-evenly;
+    color: white;
+    flex-direction: row;
+}
+.left-section {
+    background-color: #2BB3B1;
+    padding: 1.4em 2em;
+    width: 100%; 
+    align-items: center;
+}
+
+#second-row h3 {
+    font-size: 1em;
+}
+
+#second-row p {
+    font-size: .9em;
+}
+
+#price {
+    font-size: 2em;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #BFDF32;
+    color: white;
+    border: 0px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 3px 4px 15px #888888;
+}
+
+.right-section {
+    background-color: #4ABEBD;
+    padding: 2em;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    #second-row {
+        flex-direction: column;
+    }
+}
