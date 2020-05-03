@@ -23,9 +23,10 @@ body {
 }
 
 .hero {
+    max-width: 100%;
     padding: 1.4em 2em;
     background-color: white;
-    width: 100%;
+    
 }
 
 .hero h2 {
@@ -41,7 +42,7 @@ body {
 
 #second-row {
     display:flex;
-    max-width: 100%;
+    width: 100%;
     justify-content: space-evenly;
     color: white;
     flex-direction: row;
@@ -70,19 +71,27 @@ button {
     background-color: #BFDF32;
     color: white;
     border: 0px;
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
     box-shadow: 3px 4px 15px #888888;
 }
 
 .right-section {
     background-color: #4ABEBD;
-    padding: 2em;
-    width: 100%;
+    padding: 2em;    
+    max-width: 100%;
 }
 
 @media screen and (max-width: 600px) {
     #second-row {
         flex-direction: column;
     }
+
+    .left-section {
+        background-color: #2BB3B1;
+        padding: 1.4em 2em;
+        max-width: 100%; 
+        align-items: center;
+    }
+   
 }
